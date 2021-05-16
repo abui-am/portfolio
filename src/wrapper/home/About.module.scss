@@ -1,0 +1,53 @@
+.title {
+  margin-bottom: 40px;
+  span {
+    color: var(--primary-color);
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+  }
+}
+
+.left {
+  flex: 0 0 544px;
+}
+
+.textBox {
+  max-width: 519px;
+  p {
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+  }
+  p span {
+    color: var(--primary-color);
+  }
+}
+
+.right {
+  flex: 1 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imgContainer {
+  position: relative;
+  margin-right: 26px;
+  max-width: 446px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 64px 64px 16px 136px;
+  background: var(--secondary-color);
+  img {
+    margin-top: -15px;
+    margin-left: -56px;
+  }
+}
+
+.myJourneyBtn {
+  position: absolute;
+  top: 60px;
+  left: 42px;
+}

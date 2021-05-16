@@ -32,3 +32,13 @@
   composes: base typography;
   color: var(--primary-color);
 }
+
+.roundedButton {
+  composes: base typography;
+  color: var(--primary-color);
+  background: white;
+  border-radius: 30px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  min-width: 0;
+}

@@ -4,17 +4,18 @@ import styles from './Button.module.scss';
 
 export type Modify<T, R> = Omit<T, keyof R> & R;
 
-type ButtonVariant = 'outlined' | 'primary' | 'secondary';
+type ButtonVariant = 'outlined' | 'primary' | 'secondary' | 'rounded';
 
 type ThemedButtonProps<T> = Modify<
   ButtonHTMLAttributes<T>,
   {
     children: any;
     variant?: ButtonVariant;
+    Icon?: any;
   }
 >;
 
-const Button: React.FC<ThemedButtonProps<any>> = ({ children, variant = 'primary', ...props }) => {
+const Button: React.FC<ThemedButtonProps<any>> = ({ children, variant = 'primary', Icon, ...props }) => {
   const getClass = (variant: ButtonVariant) => {
     switch (variant) {
       case 'primary':
@@ -25,11 +26,24 @@ const Button: React.FC<ThemedButtonProps<any>> = ({ children, variant = 'primary
 
       case 'outlined':
         return styles.outlinedButton;
+
+      case 'rounded':
+        return styles.roundedButton;
+
+      default:
+        return styles.button;
     }
   };
   return (
     <button className={getClass(variant)} {...props}>
-      {children}
+      {Icon ? (
+        <>
+          <div style={{ flex: '1 1', whiteSpace: 'nowrap' }}>{children}</div>
+          <div style={{ marginLeft: 8, flex: '1 1' }}>{Icon}</div>
+        </>
+      ) : (
+        children
+      )}
     </button>
   );
 };

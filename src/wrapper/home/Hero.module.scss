@@ -1,0 +1,67 @@
+.rootNav {
+  height: 546px;
+  background: var(--background-secondary);
+  overflow: hidden;
+  position: relative;
+}
+
+.heroContent {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  .rootLeft {
+    flex: 0 0 480px;
+  }
+}
+
+.image {
+  position: absolute;
+  right: 40px;
+  top: 80px;
+  z-index: 3;
+}
+
+.ornament {
+  position: absolute;
+  right: -54px;
+  top: -29px;
+  z-index: -1;
+  height: 368px;
+  width: 368px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+}
+
+.ornamentLeftDown {
+  position: absolute;
+  left: -152px;
+  bottom: 63px; // 23 + 60 (width size / 2)
+  transform: rotate(90deg);
+}
+
+.ornamentLeftTop {
+  position: absolute;
+  top: 20px;
+  left: 24px; // 23 + 60 (width size / 2)
+}
+
+.ornamentCenter {
+  position: absolute;
+  top: 213px;
+  right: 431px; // 23 + 60 (width size / 2)
+}
+
+.ornamentRightTop {
+  position: absolute;
+  top: 20px;
+  right: -124px; // 23 + 60 (width size / 2)
+}
+
+.ornamentRightBottom {
+  position: absolute;
+  bottom: 23px;
+  right: -124px; // 23 + 60 (width size / 2)
+}

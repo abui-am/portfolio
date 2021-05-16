@@ -29,6 +29,7 @@ a {
   --background-secondary: #f8f8f8;
   --background-tertiary: #f2f2f2;
   --ornament: #e2e2e2;
+  --card: #ffffff;
 
   --box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.08), 0px 0.893452px 9.60461px rgba(0, 0, 0, 0.043507),
     0px 0.266004px 2.85954px rgba(0, 0, 0, 0.0255515);
@@ -48,12 +49,17 @@ a {
   --background-secondary: #231d45;
   --background-tertiary: #231d45;
   --ornament: #2f2f65;
+  --card: #231d45;
 
   --box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.3), 0px 0.893452px 9.60461px rgba(0, 0, 0, 0.15),
     0px 0.266004px 2.85954px rgba(0, 0, 0, 0.04);
   --button-shadow: 0px 9px 53px rgba(83, 87, 197, 0.41), 0px 2.01027px 11.8382px rgba(83, 87, 197, 0.244404),
     0px 0.598509px 3.52455px rgba(83, 87, 197, 0.165596);
   --footer: #2a2736;
+}
+
+.root-page {
+  background: var(--background-primary);
 }
 
 .title {

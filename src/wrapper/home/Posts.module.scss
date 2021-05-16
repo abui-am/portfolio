@@ -1,0 +1,13 @@
+.actContainer {
+  display: flex;
+  margin-top: 8px;
+  justify-content: flex-end;
+}
+
+.viewMore {
+  display: flex;
+  align-items: center;
+
+  color: var(--primary-color);
+  font-weight: bold;
+}

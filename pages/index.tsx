@@ -1,8 +1,7 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
-import Hero from '@/wrapper/home/Hero';
-import Posts from '@/wrapper/home/Posts';
+import { Hero, Posts } from '@/wrapper/home';
 
 const Home: NextPage = () => {
   return (

@@ -1,0 +1,19 @@
+.navWrapper {
+  display: flex;
+  padding: 24px 0px;
+  .left {
+    display: block;
+    flex: 1 1;
+  }
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+  .right a {
+    margin: 0px 16px;
+    font-weight: bold;
+  }
+}

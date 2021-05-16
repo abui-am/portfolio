@@ -1,0 +1,161 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s;
+}
+
+.root-page[data-theme='theme-light'] {
+  --primary-color: #5357c5;
+  --secondary-color: #9ca0ff;
+  --gray-color: #e2e2e2;
+  --text-primary: rgba(0, 0, 0, 0.8);
+  --text-secondary: rgba(0, 0, 0, 0.6);
+  --text-tertiary: rgba(0, 0, 0, 0.4);
+  --background-primary: #ffffff;
+  --background-secondary: #f8f8f8;
+  --background-tertiary: #f2f2f2;
+  --ornament: #e2e2e2;
+
+  --box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.08), 0px 0.893452px 9.60461px rgba(0, 0, 0, 0.043507),
+    0px 0.266004px 2.85954px rgba(0, 0, 0, 0.0255515);
+  --button-shadow: 0px 9px 53px rgba(83, 87, 197, 0.41), 0px 2.01027px 11.8382px rgba(83, 87, 197, 0.244404),
+    0px 0.598509px 3.52455px rgba(83, 87, 197, 0.165596);
+  --footer: #404040;
+}
+
+.root-page[data-theme='theme-dark'] {
+  --primary-color: #5357c5;
+  --secondary-color: #332b70;
+  --gray-color: #e2e2e2;
+  --text-primary: rgba(255, 255, 255);
+  --text-secondary: rgba(255, 255, 255, 0.9);
+  --text-tertiary: rgba(255, 255, 255, 0.4);
+  --background-primary: #181430;
+  --background-secondary: #231d45;
+  --background-tertiary: #231d45;
+  --ornament: #2f2f65;
+
+  --box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.3), 0px 0.893452px 9.60461px rgba(0, 0, 0, 0.15),
+    0px 0.266004px 2.85954px rgba(0, 0, 0, 0.04);
+  --button-shadow: 0px 9px 53px rgba(83, 87, 197, 0.41), 0px 2.01027px 11.8382px rgba(83, 87, 197, 0.244404),
+    0px 0.598509px 3.52455px rgba(83, 87, 197, 0.165596);
+  --footer: #2a2736;
+}
+
+.title {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-primary);
+}
+
+p,
+span,
+a {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 58px;
+  color: var(--text-primary);
+}
+
+h2 {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 58px;
+  color: var(--text-primary);
+}
+
+h3 {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  color: var(--text-primary);
+}
+
+h4 {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  color: var(--text-primary);
+}
+
+h5 {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--text-primary);
+}
+
+h6 {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--text-primary);
+}
+
+body {
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+subtitle,
+.subtitle {
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+caption,
+.caption {
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}

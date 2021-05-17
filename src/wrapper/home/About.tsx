@@ -1,7 +1,9 @@
-import Button from '@/components/button/Button';
-import { Container } from '@/components/container';
 import { ArrowRightIcon } from '@heroicons/react/solid';
 import React from 'react';
+
+import Button from '@/components/button/Button';
+import { Container } from '@/components/container';
+
 import styles from './About.module.scss';
 
 const About: React.FC = () => {
@@ -37,7 +39,7 @@ const About: React.FC = () => {
       </div>
       <div className={styles.right}>
         <div className={styles.imgContainer}>
-          <img src="Saly.png" />
+          <img src="Saly.png" alt="3dsaly" />
           <div className={styles.myJourneyBtn}>
             <Button variant="rounded" Icon={<ArrowRightIcon height={20} width={20} />}>
               My journey

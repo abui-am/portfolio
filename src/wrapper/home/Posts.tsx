@@ -1,11 +1,14 @@
+import { ArrowRightIcon } from '@heroicons/react/solid';
+import Link from 'next/link';
+import React from 'react';
+import { Col, Container as GridContainer, Row } from 'react-grid-system';
+
 import Card from '@/components/cards/Card';
 import { Container } from '@/components/container';
-import React from 'react';
 import posts from '@/json/posts.json';
-import { Row, Container as GridContainer, Col } from 'react-grid-system';
+
 import styles from './Posts.module.scss';
-import Link from 'next/link';
-import { ArrowRightIcon } from '@heroicons/react/solid';
+
 const Posts: React.FC = () => {
   return (
     <Container withPadding>
@@ -22,7 +25,7 @@ const Posts: React.FC = () => {
       </GridContainer>
 
       <div className={styles.actContainer}>
-        <Link href="/posts">
+        <Link href="/posts" passHref>
           <a>
             <div className={styles.viewMore}>
               View more blogs

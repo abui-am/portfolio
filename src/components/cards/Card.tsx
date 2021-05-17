@@ -1,7 +1,8 @@
 import { ArrowRightIcon } from '@heroicons/react/solid';
-import React from 'react';
-import styles from './Card.module.scss';
 import Link from 'next/link';
+import React from 'react';
+
+import styles from './Card.module.scss';
 
 export interface CardProps {
   data: {

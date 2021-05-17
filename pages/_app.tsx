@@ -1,11 +1,13 @@
+import '@/styles/globals.css';
+
 import { AppProps } from 'next/app';
-import { DehydratedState, Hydrate } from 'react-query/hydration';
+import { useRef } from 'react';
+import { setConfiguration } from 'react-grid-system';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
-import { useRef } from 'react';
-import '@/styles/globals.css';
+import { DehydratedState, Hydrate } from 'react-query/hydration';
+
 import { ThemeProvider } from '@/context/Theme';
-import { setConfiguration } from 'react-grid-system';
 
 type MyAppProps = AppProps & { dehydrateState: DehydratedState };
 

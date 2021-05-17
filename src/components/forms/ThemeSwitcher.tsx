@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
-import styles from './ThemeSwitcher.module.scss';
 import { MoonIcon } from '@heroicons/react/solid';
-import { useThemeState, useThemeUpdater } from '@/context/Theme';
 import clsx from 'clsx';
+import React from 'react';
+
+import { useThemeState, useThemeUpdater } from '@/context/Theme';
+
+import styles from './ThemeSwitcher.module.scss';
 const ThemeSwitcher: React.FC = () => {
   const theme = useThemeState();
   const setTheme = useThemeUpdater();

@@ -1,8 +1,10 @@
+import React from 'react';
+
 import Button from '@/components/button/Button';
 import { Container } from '@/components/container';
 import Navigation from '@/components/Navigations/Navigation';
 import Ornament from '@/icons/Ornament';
-import React from 'react';
+
 import styles from './Hero.module.scss';
 
 const Hero = () => {

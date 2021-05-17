@@ -1,8 +1,10 @@
 import React from 'react';
-import Container from '../container/Container';
-import styles from './Navigation.module.scss';
+
 import menu from '@/json/navigation.json';
+
+import Container from '../container/Container';
 import ThemeSwitcher from '../forms/ThemeSwitcher';
+import styles from './Navigation.module.scss';
 
 const Navigation: React.FC = () => {
   return (

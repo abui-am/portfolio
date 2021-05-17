@@ -1,23 +1,23 @@
-import clsx from 'clsx';
-import React, { ButtonHTMLAttributes } from 'react';
-import styles from './Button.module.scss';
+import { ButtonHTMLAttributes } from 'react';
 
-export type Modify<T, R> = Omit<T, keyof R> & R;
+import { Modify } from '@/typings/typeHelper';
+
+import styles from './Button.module.scss';
 
 type ButtonVariant = 'outlined' | 'primary' | 'secondary' | 'rounded';
 
 type ThemedButtonProps<T> = Modify<
   ButtonHTMLAttributes<T>,
   {
-    children: any;
+    children: unknown;
     variant?: ButtonVariant;
-    Icon?: any;
+    Icon?: JSX.Element;
   }
 >;
 
-const Button: React.FC<ThemedButtonProps<any>> = ({ children, variant = 'primary', Icon, ...props }) => {
-  const getClass = (variant: ButtonVariant) => {
-    switch (variant) {
+const Button: React.FC<ThemedButtonProps<unknown>> = ({ children, variant = 'primary', Icon, ...props }) => {
+  const getClass = (varians: ButtonVariant) => {
+    switch (varians) {
       case 'primary':
         return styles.button;
 
@@ -35,7 +35,7 @@ const Button: React.FC<ThemedButtonProps<any>> = ({ children, variant = 'primary
     }
   };
   return (
-    <button className={getClass(variant)} {...props}>
+    <button className={getClass(variant)} type="button" {...props}>
       {Icon ? (
         <>
           <div style={{ flex: '1 1', whiteSpace: 'nowrap' }}>{children}</div>

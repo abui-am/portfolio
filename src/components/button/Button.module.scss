@@ -31,6 +31,7 @@
 .secondaryButton {
   composes: base typography;
   color: var(--primary-color);
+  background: var(--background-tertiary);
 }
 
 .roundedButton {

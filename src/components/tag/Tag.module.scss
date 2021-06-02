@@ -1,0 +1,11 @@
+.tagBase {
+  padding: 4px 12px;
+  background: var(--background-secondary);
+  border-radius: 4px;
+}
+
+.tagText {
+  composes: span from global;
+  font-weight: bold;
+  color: var(--primary-color);
+}

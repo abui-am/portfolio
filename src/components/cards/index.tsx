@@ -1,3 +1,3 @@
 import Card from './Card';
-
-export { Card };
+import SkillCard from './SkillCard';
+export { Card, SkillCard };

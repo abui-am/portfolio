@@ -1,0 +1,13 @@
+.base {
+  display: flex;
+  min-width: 0px;
+  .box1 {
+    flex: 0 0 72px;
+    display: flex;
+    justify-content: center;
+  }
+  .box2 {
+    flex: 1 1;
+    margin-left: 24px;
+  }
+}

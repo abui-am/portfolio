@@ -1,0 +1,92 @@
+[
+  {
+    "id": "001",
+    "imageUrl": "/skills/react.svg",
+    "title": "React JS",
+    "level": "Proficient",
+    "category": ["tools"],
+    "specialization": ["front-end"],
+    "monthOfExperience": 24
+  },
+  {
+    "id": "002",
+    "imageUrl": "/skills/js.svg",
+    "title": "JavaScript",
+    "level": "Proficient",
+    "category": ["language"],
+    "specialization": ["front-end", "back-end"],
+    "monthOfExperience": 24
+  },
+  {
+    "id": "003",
+    "imageUrl": "/skills/ts.svg",
+    "title": "TypeScript",
+    "level": "Intermediate",
+    "category": ["language"],
+    "specialization": ["front-end", "back-end"],
+    "monthOfExperience": 6
+  },
+  {
+    "id": "004",
+    "imageUrl": "/skills/html.svg",
+    "title": "HTML",
+    "level": "Proficient",
+    "category": ["language"],
+    "specialization": ["front-end"],
+    "monthOfExperience": 24
+  },
+  {
+    "id": "005",
+    "imageUrl": "/skills/css.svg",
+    "title": "CSS",
+    "level": "Proficient",
+    "category": ["language"],
+    "specialization": ["front-end"],
+    "monthOfExperience": 24
+  },
+  {
+    "id": "006",
+    "imageUrl": "/skills/express.svg",
+    "title": "Express JS",
+    "level": "Basic",
+    "category": ["tools"],
+    "specialization": ["back-end"],
+    "monthOfExperience": 24
+  },
+  {
+    "id": "007",
+    "imageUrl": "/skills/figma.svg",
+    "title": "Figma",
+    "level": "Intermediate",
+    "category": ["tools"],
+    "specialization": ["design"],
+    "monthOfExperience": 12
+  },
+  {
+    "id": "008",
+    "imageUrl": "/skills/ai.svg",
+    "title": "Adobe Illustrator",
+    "level": "Proficient",
+    "category": ["tools"],
+    "specialization": ["design"],
+    "monthOfExperience": 24
+  },
+  {
+    "id": "009",
+    "imageUrl": "/skills/ps.svg",
+    "title": "Adobe Photoshop",
+    "level": "Intermediate",
+    "category": ["tools"],
+    "specialization": ["design"],
+    "monthOfExperience": 6
+  },
+  {
+    "id": "010",
+    "imageUrl": "/skills/php.svg",
+    "title": "PHP",
+    "level": "basic",
+    "category": ["tools"],
+    "specialization": ["back-end"],
+    "monthOfExperience": 6
+  }
+]

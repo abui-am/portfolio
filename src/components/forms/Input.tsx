@@ -1,12 +1,12 @@
 import clsx from 'clsx';
-import React, { InputHTMLAttributes } from 'react';
+import React from 'react';
 
 import { Modify } from '@/typings/typeHelper';
 
 import styles from './Input.module.scss';
 
 export type InputProps = Modify<
-  InputHTMLAttributes<unknown>,
+  React.InputHTMLAttributes<HTMLInputElement>,
   {
     Icon?: JSX.Element;
   }

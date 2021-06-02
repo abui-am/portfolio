@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react';
 import { Col, Row } from 'react-grid-system';
 
 import PillButton from '@/components/button/PillButton';
-import SkillCard, { SkillCardData } from '@/components/cards/SkillCard';
+import SkillCard from '@/components/cards/SkillCard';
 import { Container } from '@/components/container';
 import Paper from '@/components/container/Paper';
 import Input from '@/components/forms/Input';
@@ -41,8 +41,8 @@ const Skill: React.FC = () => {
           <PillButton buttonData={buttonData} onClick={(v) => setActiveData(v)} />
           <Input
             onKeyUp={(e) => {
-              console.log('ASDSAD');
-              setSearch(e.target.value);
+              const target = e.target as HTMLInputElement;
+              setSearch(target.value);
             }}
             placeholder="Search..."
             Icon={<SearchIcon height={24} width={24} style={{ color: 'var(--text-secondary)' }} />}

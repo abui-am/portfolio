@@ -1,18 +1,18 @@
 [
   {
     "name": "Posts",
-    "slug": "/posts"
+    "slug": "/#posts"
   },
   {
     "name": "Skills and stack",
-    "slug": "/skills-and-stack"
+    "slug": "/#skills-and-stack"
   },
   {
-    "name": "My Journey",
-    "slug": "/my-journey"
+    "name": "About",
+    "slug": "/#about"
   },
   {
     "name": "Projects",
-    "slug": "/projects"
+    "slug": "/#projects"
   }
 ]

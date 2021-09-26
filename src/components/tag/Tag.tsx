@@ -1,9 +1,11 @@
+import clsx from 'clsx';
 import React from 'react';
 
 import styles from './Tag.module.scss';
-const Tag: React.FC<{ text: string }> = ({ text }) => {
+// eslint-disable-next-line react/require-default-props
+const Tag: React.FC<{ text: string; withMargin?: boolean }> = ({ text, withMargin = false }) => {
   return (
-    <div className={styles.tagBase}>
+    <div className={clsx(styles.tagBase, withMargin ? styles.withMargin : '')}>
       <span className={styles.tagText}>{text}</span>
     </div>
   );

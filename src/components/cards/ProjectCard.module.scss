@@ -1,0 +1,31 @@
+.cardBase {
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  height: 350px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cardContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--card);
+  padding: 24px;
+}
+
+.actContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.readMore {
+  display: flex;
+  align-items: center;
+  a {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+}

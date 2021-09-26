@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import Head from 'next/head';
 
 import styles from '@/styles/Home.module.css';
-import { About, Hero, Posts, Skill } from '@/wrapper/home';
+import { About, Hero, NotableProject, Posts, Skill } from '@/wrapper/home';
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +17,7 @@ const Home: NextPage = () => {
         <Posts />
         <About />
         <Skill />
+        <NotableProject />
       </main>
 
       <footer className={styles.footer}>

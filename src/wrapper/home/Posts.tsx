@@ -1,5 +1,5 @@
-import { ArrowRightIcon } from '@heroicons/react/solid';
-import Link from 'next/link';
+// import { ArrowRightIcon } from '@heroicons/react/solid';
+// import Link from 'next/link';
 import React from 'react';
 import { Col, Container as GridContainer, Row } from 'react-grid-system';
 
@@ -7,14 +7,16 @@ import Card from '@/components/cards/Card';
 import { Container } from '@/components/container';
 import posts from '@/json/posts.json';
 
-import styles from './Posts.module.scss';
+// import styles from './Posts.module.scss';
 
 const Posts: React.FC = () => {
   return (
     <Container withPadding>
-      <h4 style={{ marginBottom: 40 }}>Recent posts</h4>
+      <h4 style={{ marginBottom: 40 }} id="posts">
+        Recent posts
+      </h4>
 
-      <GridContainer style={{ margin: '0px -16px', padding: 0 }}>
+      <GridContainer style={{ padding: 0 }}>
         <Row>
           {posts.map((data, index) => (
             <Col key={data.id} style={{ marginBottom: 32 }} sm={index < 2 ? 6 : 4}>
@@ -24,7 +26,7 @@ const Posts: React.FC = () => {
         </Row>
       </GridContainer>
 
-      <div className={styles.actContainer}>
+      {/* <div className={styles.actContainer}>
         <Link href="/posts" passHref>
           <a>
             <div className={styles.viewMore}>
@@ -33,7 +35,7 @@ const Posts: React.FC = () => {
             </div>
           </a>
         </Link>
-      </div>
+      </div> */}
     </Container>
   );
 };

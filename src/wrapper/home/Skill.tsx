@@ -35,7 +35,9 @@ const Skill: React.FC = () => {
 
   return (
     <Container withPadding>
-      <h4 style={{ marginBottom: 40 }}>Skills and Stack</h4>
+      <h4 style={{ marginBottom: 40 }} id="skills-and-stack">
+        Skills and Stack
+      </h4>
       <Paper>
         <div className={styles.actContainer}>
           <PillButton buttonData={buttonData} onClick={(v) => setActiveData(v)} />

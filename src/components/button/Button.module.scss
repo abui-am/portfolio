@@ -20,12 +20,19 @@
   box-shadow: var(--button-shadow);
   composes: base typography;
 }
+.button:hover {
+  box-shadow: var(--button-shadow-hover);
+}
 
 .outlinedButton {
   composes: base typography;
   background: transparent;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
+}
+
+.outlinedButton:hover {
+  box-shadow: var(--button-shadow);
 }
 
 .secondaryButton {

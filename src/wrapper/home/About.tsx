@@ -15,7 +15,7 @@ const About: React.FC = () => {
       }}
       style={{ display: 'flex' }}
     >
-      <div className={styles.left}>
+      <div className={styles.left} id="about">
         <h4 className={styles.title}>
           A <span className={styles.titlePrimary}>passionate Front End Developer</span>, who love to learn.
         </h4>

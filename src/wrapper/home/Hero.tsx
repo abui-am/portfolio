@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 import Button from '@/components/button/Button';
@@ -7,7 +8,7 @@ import Ornament from '@/icons/Ornament';
 
 import styles from './Hero.module.scss';
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <section className={styles.rootNav}>
       <Navigation />
@@ -24,13 +25,17 @@ const Hero = () => {
                 A passionate developer, who love to code and sometime design, and sometime drink coffee.
               </p>
               <div style={{ display: 'flex' }}>
-                <Button style={{ marginRight: 16 }}>View Profile</Button>
-                <Button variant="outlined">Talk is cheap, show me your code</Button>
+                <Button style={{ marginRight: 16 }}>Show Resume</Button>
+                <Link href="https://www.github.com/abui-am" passHref>
+                  <a target="_blank">
+                    <Button variant="outlined">Talk is cheap, show me your code</Button>
+                  </a>
+                </Link>
               </div>
             </div>
             <div className={styles.rootRight}>
               <div className={styles.image}>
-                <img src="./profile.png" />
+                <img src="./profile.png" alt="profile" />
                 <div className={styles.ornament} />
               </div>
             </div>

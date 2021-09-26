@@ -25,7 +25,15 @@ const Hero: React.FC = () => {
                 A passionate developer, who love to code and sometime design, and sometime drink coffee.
               </p>
               <div className={styles.buttonWrapper}>
-                <Button className={styles.buttonResume}>Show Resume</Button>
+                <Link
+                  href="https://drive.google.com/file/d/1KFJ0XgSykpK4rjytJRseAKlk6vumdt2b/view?usp=sharing"
+                  passHref
+                >
+                  <a target="_blank">
+                    <Button className={styles.buttonResume}>Show Resume</Button>
+                  </a>
+                </Link>
+
                 <Link href="https://www.github.com/abui-am" passHref>
                   <a target="_blank">
                     <Button variant="outlined" className={styles.buttonResume}>

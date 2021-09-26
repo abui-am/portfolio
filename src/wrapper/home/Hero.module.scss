@@ -65,3 +65,49 @@
   bottom: 23px;
   right: -124px; // 23 + 60 (width size / 2)
 }
+
+.buttonWrapper {
+  display: flex;
+}
+
+.buttonResume {
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
+
+@media (max-width: 600px) {
+  .rootNav {
+    height: 646px;
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+
+  .heroContent {
+    display: block;
+    padding-top: 100px;
+  }
+
+  .image {
+    position: absolute;
+    right: 40px;
+    top: 580px;
+    z-index: 3;
+  }
+  .buttonWrapper {
+    display: block;
+    margin-top: 32px;
+  }
+
+  .buttonResume {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .rootRight {
+    display: none;
+  }
+
+  .ornamentCenter {
+    display: none;
+  }
+}

@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { ButtonHTMLAttributes } from 'react';
 
 import { Modify } from '@/typings/typeHelper';
@@ -15,7 +16,7 @@ type ThemedButtonProps<T> = Modify<
   }
 >;
 
-const Button: React.FC<ThemedButtonProps<unknown>> = ({ children, variant = 'primary', Icon, ...props }) => {
+const Button: React.FC<ThemedButtonProps<unknown>> = ({ children, variant = 'primary', Icon, className, ...props }) => {
   const getClass = (varians: ButtonVariant) => {
     switch (varians) {
       case 'primary':
@@ -35,7 +36,7 @@ const Button: React.FC<ThemedButtonProps<unknown>> = ({ children, variant = 'pri
     }
   };
   return (
-    <button className={getClass(variant)} type="button" {...props}>
+    <button className={clsx(getClass(variant), className)} type="button" {...props}>
       {Icon ? (
         <>
           <div style={{ flex: '1 1', whiteSpace: 'nowrap' }}>{children}</div>

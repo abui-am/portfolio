@@ -29,3 +29,22 @@
     font-weight: bold;
   }
 }
+
+.date {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 600px) {
+  .actContainer {
+    display: block;
+  }
+
+  .cardBase {
+    height: 400px;
+  }
+
+  .date {
+    margin-top: 16px;
+    display: block;
+  }
+}

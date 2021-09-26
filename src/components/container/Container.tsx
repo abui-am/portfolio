@@ -4,8 +4,8 @@ import styles from './Container.module.scss';
 
 const Container: React.FC<{ style?: CSSProperties; outerStyle?: CSSProperties; withPadding?: boolean }> = ({
   children,
-  style,
-  outerStyle,
+  style = {},
+  outerStyle = {},
   withPadding,
 }) => {
   return (

@@ -20,15 +20,17 @@ const Hero: React.FC = () => {
               <p style={{ marginBottom: 8, fontWeight: 'bold', color: 'var(--primary-color)' }}>
                 In depth documentation of myself
               </p>
-              <h3 style={{ marginBottom: 8 }}>Abuidillah Adjie Muliadi</h3>
+              <h3 style={{ marginBottom: 8, zIndex: 2000 }}>Abuidillah Adjie Muliadi</h3>
               <p style={{ marginBottom: 24, color: 'var(--text-secondary)' }}>
                 A passionate developer, who love to code and sometime design, and sometime drink coffee.
               </p>
-              <div style={{ display: 'flex' }}>
-                <Button style={{ marginRight: 16 }}>Show Resume</Button>
+              <div className={styles.buttonWrapper}>
+                <Button className={styles.buttonResume}>Show Resume</Button>
                 <Link href="https://www.github.com/abui-am" passHref>
                   <a target="_blank">
-                    <Button variant="outlined">Talk is cheap, show me your code</Button>
+                    <Button variant="outlined" className={styles.buttonResume}>
+                      Talk is cheap, show me your code
+                    </Button>
                   </a>
                 </Link>
               </div>

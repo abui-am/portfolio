@@ -1,10 +1,21 @@
-import React from 'react';
+import Cookies from 'js-cookie';
+import React, { useEffect } from 'react';
 
 const ThemeStateContext = React.createContext({});
-const ThemeUpdaterContext = React.createContext<Function>(() => {});
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const ThemeUpdaterContext = React.createContext<any>(() => 'light');
 
 const ThemeProvider: React.FC = ({ children }) => {
   const [theme, setTheme] = React.useState('theme-light');
+
+  useEffect(() => {
+    setTheme(Cookies.get('theme') ?? 'theme-light');
+  }, []);
+  useEffect(() => {
+    Cookies.set('theme', theme, {
+      expires: 10000,
+    });
+  }, [theme]);
   return (
     <ThemeStateContext.Provider value={theme}>
       <ThemeUpdaterContext.Provider value={setTheme}>

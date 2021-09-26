@@ -60,6 +60,7 @@
         "aspects": ["noHref", "invalidHref", "preferButton"]
       }
     ],
+    "react/require-default-props": "off", // Since we do not use prop-types
     "no-shadow": "off"
   },
   "globals": {

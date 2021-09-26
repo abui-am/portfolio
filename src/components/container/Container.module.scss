@@ -14,3 +14,10 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
+@media (max-width: 600px) {
+  .containerWrapper {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}

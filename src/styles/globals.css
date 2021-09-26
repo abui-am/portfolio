@@ -4,11 +4,20 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+a h6:hover,
+a h5:hover,
+a h4:hover,
+a h3:hover,
+a h2:hover,
+a h1:hover {
+  color: var(--primary-color);
 }
 
 * {

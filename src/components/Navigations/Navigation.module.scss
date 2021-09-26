@@ -17,3 +17,14 @@
     font-weight: bold;
   }
 }
+
+@media (max-width: 600px) {
+  .navWrapper {
+    .right {
+      display: none;
+    }
+
+    display: flex;
+    padding: 24px;
+  }
+}

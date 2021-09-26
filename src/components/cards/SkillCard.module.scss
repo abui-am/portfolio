@@ -11,3 +11,19 @@
     margin-left: 24px;
   }
 }
+
+@media (max-width: 600px) {
+  .base {
+    display: block;
+
+    .box1 {
+      justify-content: left;
+      margin-bottom: 16px;
+    }
+
+    .box2 {
+      flex: 1 1;
+      margin-left: 0;
+    }
+  }
+}

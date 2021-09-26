@@ -1,3 +1,7 @@
+.wrapper {
+  display: flex;
+}
+
 .title {
   margin-bottom: 40px;
   span {
@@ -50,4 +54,27 @@
   position: absolute;
   top: 60px;
   left: 42px;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    display: block;
+  }
+
+  .imgContainer {
+    margin-right: 0px;
+    img {
+      margin-left: 0;
+    }
+  }
+
+  .myJourneyBtn {
+    position: absolute;
+    top: 20px;
+    left: 92px;
+  }
+
+  .imageSally {
+    width: 100%;
+  }
 }

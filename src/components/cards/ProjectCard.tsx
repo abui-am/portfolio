@@ -19,6 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ date, title, desc, tags = [],
       className={styles.cardBase}
       style={{
         background: `url('${imageUrl}')`,
+        backgroundSize: 'cover',
       }}
     >
       <div className={styles.cardContainer}>
@@ -30,12 +31,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ date, title, desc, tags = [],
 
         <p style={{ color: 'var(--text-secondary)', marginBottom: 16 }}>{desc}</p>
         <div className={styles.actContainer}>
-          <div style={{ display: 'flex', marginLeft: -8, marginRight: -8 }}>
+          <div style={{ display: 'flex', marginLeft: -8, marginRight: -8, flexWrap: 'wrap' }}>
             {tags.map((value) => {
               return <Tag withMargin text={value} key={value} />;
             })}
           </div>
-          <div style={{ color: 'var(--text-secondary)' }}>{date}</div>
+          <div className={styles.date}>{date}</div>
         </div>
       </div>
     </div>

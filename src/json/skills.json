@@ -21,10 +21,10 @@
     "id": "003",
     "imageUrl": "/skills/ts.svg",
     "title": "TypeScript",
-    "level": "Intermediate",
+    "level": "Proficient",
     "category": ["language"],
     "specialization": ["front-end", "back-end"],
-    "monthOfExperience": 6
+    "monthOfExperience": 9
   },
   {
     "id": "004",
@@ -51,7 +51,7 @@
     "level": "Basic",
     "category": ["tools"],
     "specialization": ["back-end"],
-    "monthOfExperience": 24
+    "monthOfExperience": 3
   },
   {
     "id": "007",

@@ -22,6 +22,7 @@ const Card: React.FC<CardProps> = ({ data = {} }) => {
       style={{
         backgroundImage: `url(${imageUrl}
         )`,
+        backgroundSize: 'cover',
       }}
     >
       <div className={styles.cardContainer}>

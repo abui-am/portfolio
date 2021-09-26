@@ -3,3 +3,13 @@
   justify-content: space-between;
   margin-bottom: 64px;
 }
+
+@media (max-width: 600px) {
+  .actContainer {
+    display: block;
+  }
+
+  .margin {
+    margin-top: 16px;
+  }
+}

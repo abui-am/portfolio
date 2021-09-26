@@ -41,14 +41,16 @@ const Skill: React.FC = () => {
       <Paper>
         <div className={styles.actContainer}>
           <PillButton buttonData={buttonData} onClick={(v) => setActiveData(v)} />
-          <Input
-            onKeyUp={(e) => {
-              const target = e.target as HTMLInputElement;
-              setSearch(target.value);
-            }}
-            placeholder="Search..."
-            Icon={<SearchIcon height={24} width={24} style={{ color: 'var(--text-secondary)' }} />}
-          />
+          <div className={styles.margin}>
+            <Input
+              onKeyUp={(e) => {
+                const target = e.target as HTMLInputElement;
+                setSearch(target.value);
+              }}
+              placeholder="Search..."
+              Icon={<SearchIcon height={24} width={24} style={{ color: 'var(--text-secondary)' }} />}
+            />
+          </div>
         </div>
         <Row>
           {useMemo(

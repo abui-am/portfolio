@@ -16,7 +16,7 @@ const Navigation: React.FC = () => {
         <div className={styles.right}>
           {menu.map(({ name, slug }) => {
             return (
-              <a href={slug} key={slug}>
+              <a href={slug} key={slug} style={{ whiteSpace: 'nowrap' }}>
                 {name}
               </a>
             );

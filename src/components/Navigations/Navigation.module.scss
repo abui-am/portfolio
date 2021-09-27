@@ -28,3 +28,11 @@
     padding: 24px;
   }
 }
+
+@media (max-width: 768px) {
+  .navWrapper {
+    .right {
+      display: none;
+    }
+  }
+}

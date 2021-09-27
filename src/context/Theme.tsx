@@ -16,6 +16,7 @@ const ThemeProvider: React.FC = ({ children }) => {
       expires: 10000,
     });
   }, [theme]);
+
   return (
     <ThemeStateContext.Provider value={theme}>
       <ThemeUpdaterContext.Provider value={setTheme}>

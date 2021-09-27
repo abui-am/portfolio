@@ -46,7 +46,7 @@ const Home: NextPage = () => {
         <NotableProject />
       </main>
 
-      <footer className={styles.footer}>Made with ❤️</footer>
+      <footer className={styles.footer}>Made with ❤️ by Abui</footer>
     </>
   );
 };
